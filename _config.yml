@@ -1,0 +1,72 @@
+# GitHub Pages Configuration for De Beauty Schuur
+title: De Beauty Schuur
+description: Professionele beauty salon in Nederland - behandelingen, PMU, huidverzorging en meer
+url: "https://fsdaniel.github.io"
+baseurl: "/paschuur"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Exclude from processing
+exclude:
+  - README.md
+  - PLANNING.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Include only these files
+include:
+  - _redirects
+
+# Collections
+collections:
+  treatments:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "treatments"
+    values:
+      layout: "treatment"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO
+author: De Beauty Schuur
+social:
+  name: De Beauty Schuur
+  links:
+    - https://www.instagram.com/debeautyschuur
+    - https://www.facebook.com/debeautyschuur
+
+# Analytics (to be configured)
+google_analytics: # Add your GA tracking ID here
+
+# Contact form (external widget)
+contact_form:
+  enabled: true
+  provider: "external" # Will use external widget
+
+# Booking system
+booking_system:
+  enabled: true
+  provider: "external" # Will use external booking platform

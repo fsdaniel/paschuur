@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afspraak maken - De Beauty Schuur</title>
+    <meta name="description" content="Maak eenvoudig een afspraak bij De Beauty Schuur. Kies uit onze professionele beauty behandelingen en plan je bezoek online.">
+    <meta name="keywords" content="afspraak maken, booking, beauty salon, behandeling, online reserveren">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fsdaniel.github.io/paschuur/afspraak-maken.html">
+    <meta property="og:title" content="Afspraak maken - De Beauty Schuur">
+    <meta property="og:description" content="Maak eenvoudig een afspraak bij De Beauty Schuur. Kies uit onze professionele beauty behandelingen.">
+    <meta property="og:image" content="https://fsdaniel.github.io/paschuur/assets/images/og-image.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">
+                <a href="index.html">De Beauty Schuur</a>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="over-ons.html" class="nav-link">Over de Beauty Schuur</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="behandelingen/index.html" class="nav-link">Behandelingen</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a href="behandelingen/example1.html" class="dropdown-link">Example 1</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="behandelingen/example2.html" class="dropdown-link">Example 2</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="tarieven.html" class="nav-link">Tarieven</a>
+                </li>
+                <li class="nav-item">
+                    <a href="afspraak-maken.html" class="nav-link">Afspraak maken</a>
+                </li>
+                <li class="nav-item">
+                    <a href="merken.html" class="nav-link">Merken</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                ☰
+            </button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Afspraak maken</h1>
+            <p class="hero-subtitle">Plan je bezoek aan De Beauty Schuur</p>
+        </div>
+    </section>
+
+    <!-- Booking Options -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid--2">
+                <div>
+                    <h2>Online boeken</h2>
+                    <p>Maak eenvoudig een afspraak via ons online boekingssysteem. Kies je gewenste behandeling, datum en tijd.</p>
+                    
+                    <!-- External Booking Widget -->
+                    <div id="booking-widget" class="booking-widget">
+                        <!-- This will be replaced by the external booking system widget -->
+                        <div class="booking-placeholder">
+                            <h3>Online boekingssysteem</h3>
+                            <p>Hier wordt het externe boekingssysteem geladen...</p>
+                            <div class="booking-iframe-container">
+                                <!-- Placeholder for booking system iframe -->
+                                <div style="width: 100%; height: 600px; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center; border-radius: 8px; border: 2px dashed #ccc;">
+                                    <div style="text-align: center;">
+                                        <p><strong>Boekingssysteem</strong></p>
+                                        <p>Wordt hier geladen...</p>
+                                        <p><small>Integreer hier je externe booking platform</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2>Alternatieve manieren</h2>
+                    
+                    <div class="booking-methods">
+                        <div class="card">
+                            <h3>📞 Telefonisch</h3>
+                            <p>Bel ons direct voor een afspraak</p>
+                            <a href="tel:+31612345678" class="btn btn--primary">06-12345678</a>
+                        </div>
+                        
+                        <div class="card">
+                            <h3>💬 WhatsApp</h3>
+                            <p>Stuur een bericht via WhatsApp</p>
+                            <a href="https://wa.me/31612345678" class="btn btn--primary" target="_blank" rel="noopener">WhatsApp</a>
+                        </div>
+                        
+                        <div class="card">
+                            <h3>📧 E-mail</h3>
+                            <p>Stuur een e-mail met je voorkeuren</p>
+                            <a href="mailto:info@debeautyschuur.nl" class="btn btn--primary">E-mail sturen</a>
+                        </div>
+                    </div>
+                    
+                    <div class="booking-info">
+                        <h3>Belangrijke informatie</h3>
+                        <ul>
+                            <li>Afspraken kunnen tot 24 uur van tevoren kosteloos worden geannuleerd</li>
+                            <li>Bij annulering binnen 24 uur kunnen kosten in rekening worden gebracht</li>
+                            <li>We vragen je 10 minuten voor je afspraak aanwezig te zijn</li>
+                            <li>Neem een geldig legitimatiebewijs mee</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatment Overview -->
+    <section class="section section--light">
+        <div class="container">
+            <h2 class="text-center mb-4">Onze behandelingen</h2>
+            <div class="grid grid--3">
+                <div class="card">
+                    <h3>Permanente Make-up</h3>
+                    <ul>
+                        <li>Nano Hairstrokes</li>
+                        <li>Powderbrows</li>
+                        <li>Combinatiebrows</li>
+                        <li>Deepliner</li>
+                        <li>Lipblush</li>
+                    </ul>
+                    <p><strong>Duur:</strong> 2-3 uur</p>
+                    <a href="behandelingen/example1.html" class="btn btn--secondary">Meer informatie</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Huidverzorging</h3>
+                    <ul>
+                        <li>Gezichtsbehandeling</li>
+                        <li>Peeling</li>
+                        <li>Microneedling</li>
+                        <li>Hydrafacial</li>
+                        <li>Huidanalyse</li>
+                    </ul>
+                    <p><strong>Duur:</strong> 1-2 uur</p>
+                    <a href="behandelingen/example2.html" class="btn btn--secondary">Meer informatie</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Laserontharing</h3>
+                    <ul>
+                        <li>Gezicht</li>
+                        <li>Benen</li>
+                        <li>Oksels</li>
+                        <li>Bikinilijn</li>
+                        <li>Rug</li>
+                    </ul>
+                    <p><strong>Duur:</strong> 30-90 minuten</p>
+                    <a href="behandelingen/example1.html" class="btn btn--secondary">Meer informatie</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preparation Guidelines -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center mb-4">Voorbereiding op je behandeling</h2>
+            <div class="grid grid--2">
+                <div>
+                    <h3>Algemene richtlijnen</h3>
+                    <ul>
+                        <li>Kom schoon en zonder make-up naar je afspraak</li>
+                        <li>Vermijd alcohol 24 uur voor je behandeling</li>
+                        <li>Neem geen bloedverdunners tenzij voorgeschreven</li>
+                        <li>Informeer ons over eventuele allergieën</li>
+                        <li>Draag comfortabele kleding</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Specifieke voorbereiding</h3>
+                    <p><strong>Permanente Make-up:</strong></p>
+                    <ul>
+                        <li>Vermijd zon en zonnebank 2 weken voor behandeling</li>
+                        <li>Gebruik geen retinol producten 1 week voor behandeling</li>
+                    </ul>
+                    
+                    <p><strong>Laserontharing:</strong></p>
+                    <ul>
+                        <li>Scheer het te behandelen gebied 24 uur van tevoren</li>
+                        <li>Vermijd zon 2 weken voor behandeling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section--light">
+        <div class="container">
+            <h2 class="text-center mb-4">Veelgestelde vragen over afspraken</h2>
+            <div class="grid grid--2">
+                <div class="faq-item">
+                    <h3>Hoe ver van tevoren kan ik een afspraak maken?</h3>
+                    <p>Je kunt tot 3 maanden van tevoren een afspraak maken. Voor populaire tijden raden we aan om ruim van tevoren te boeken.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Kan ik mijn afspraak wijzigen?</h3>
+                    <p>Ja, je kunt je afspraak wijzigen via het boekingssysteem, telefonisch of via WhatsApp. Wijzigingen tot 24 uur van tevoren zijn kosteloos.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Wat als ik te laat kom?</h3>
+                    <p>Bij te laat komen kunnen we de behandeling mogelijk moeten verkorten of verplaatsen. We vragen je 10 minuten voor je afspraak aanwezig te zijn.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Kan ik een afspraak maken voor meerdere behandelingen?</h3>
+                    <p>Ja, je kunt meerdere behandelingen in één afspraak plannen. Neem contact met ons op voor de beste planning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>De Beauty Schuur</h3>
+                    <p>Professionele beauty behandelingen voor de beste versie van jezelf.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Behandelingen</h3>
+                    <ul class="footer-links">
+                        <li><a href="behandelingen/example1.html">Permanente Make-up</a></li>
+                        <li><a href="behandelingen/example2.html">Huidverzorging</a></li>
+                        <li><a href="behandelingen/example1.html">Laserontharing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:+31612345678">06-12345678</a></li>
+                        <li><a href="mailto:info@debeautyschuur.nl">info@debeautyschuur.nl</a></li>
+                        <li><a href="contact.html">Contactformulier</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Volg ons</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://www.instagram.com/debeautyschuur" target="_blank" rel="noopener">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/debeautyschuur" target="_blank" rel="noopener">Facebook</a></li>
+                        <li><a href="https://wa.me/31612345678" target="_blank" rel="noopener">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 De Beauty Schuur. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div class="cookie-banner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <p>Deze website gebruikt cookies om de gebruikerservaring te verbeteren. Door verder te gaan, accepteert u ons gebruik van cookies.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button class="cookie-btn cookie-btn--accept">Accepteren</button>
+                <button class="cookie-btn cookie-btn--decline">Weigeren</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- External Booking System Script -->
+    <!-- Replace with actual external booking system script -->
+    <script>
+        // Example of how to integrate external booking system
+        // This would be replaced with the actual booking system script from your chosen provider
+        
+        // Example integrations for common booking systems:
+        // - Acuity Scheduling: https://acuityscheduling.com/
+        // - Calendly: https://calendly.com/
+        // - SimplyBook.me: https://simplybook.me/
+        // - BookingBug: https://www.bookingbug.com/
+        // - Fresha: https://www.fresha.com/
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize external booking system widget here
+            console.log('Booking system widget ready to be initialized');
+            
+            // Example: Load booking widget
+            // window.BookingWidget.init({
+            //     container: '#booking-widget',
+            //     apiKey: 'your-booking-api-key',
+            //     businessId: 'your-business-id'
+            // });
+        });
+    </script>
+</body>
+</html>

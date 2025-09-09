@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - De Beauty Schuur</title>
+    <meta name="description" content="Neem contact op met De Beauty Schuur. Vragen over behandelingen, afspraken maken of meer informatie? We helpen je graag!">
+    <meta name="keywords" content="contact, afspraak, beauty salon, vragen, informatie">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fsdaniel.github.io/paschuur/contact.html">
+    <meta property="og:title" content="Contact - De Beauty Schuur">
+    <meta property="og:description" content="Neem contact op met De Beauty Schuur. Vragen over behandelingen, afspraken maken of meer informatie?">
+    <meta property="og:image" content="https://fsdaniel.github.io/paschuur/assets/images/og-image.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">
+                <a href="index.html">De Beauty Schuur</a>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="over-ons.html" class="nav-link">Over de Beauty Schuur</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="behandelingen/index.html" class="nav-link">Behandelingen</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a href="behandelingen/example1.html" class="dropdown-link">Example 1</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="behandelingen/example2.html" class="dropdown-link">Example 2</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="tarieven.html" class="nav-link">Tarieven</a>
+                </li>
+                <li class="nav-item">
+                    <a href="afspraak-maken.html" class="nav-link">Afspraak maken</a>
+                </li>
+                <li class="nav-item">
+                    <a href="merken.html" class="nav-link">Merken</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                ☰
+            </button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Contact</h1>
+            <p class="hero-subtitle">Heb je vragen? Neem gerust contact met ons op!</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid--2">
+                <div>
+                    <h2>Contactgegevens</h2>
+                    
+                    <div class="contact-info">
+                        <h3>Adres</h3>
+                        <p>
+                            [Straatnaam en huisnummer]<br>
+                            [Postcode en plaats]<br>
+                            Nederland
+                        </p>
+                        
+                        <h3>Telefoon</h3>
+                        <p><a href="tel:+31612345678">06-12345678</a></p>
+                        
+                        <h3>E-mail</h3>
+                        <p><a href="mailto:info@debeautyschuur.nl">info@debeautyschuur.nl</a></p>
+                        
+                        <h3>Openingstijden</h3>
+                        <p>
+                            Maandag - Vrijdag: 09:00 - 18:00<br>
+                            Zaterdag: 09:00 - 17:00<br>
+                            Zondag: Gesloten
+                        </p>
+                        
+                        <h3>Social Media</h3>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/debeautyschuur" target="_blank" rel="noopener" class="btn btn--secondary">Instagram</a>
+                            <a href="https://www.facebook.com/debeautyschuur" target="_blank" rel="noopener" class="btn btn--secondary">Facebook</a>
+                            <a href="https://wa.me/31612345678" target="_blank" rel="noopener" class="btn btn--secondary">WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2>Stuur ons een bericht</h2>
+                    
+                    <!-- External Contact Form Widget -->
+                    <div id="contact-form-widget">
+                        <!-- This will be replaced by the external contact form widget -->
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Naam *</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">E-mailadres *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Telefoonnummer</label>
+                                <input type="tel" id="phone" name="phone" class="form-input">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Onderwerp</label>
+                                <select id="subject" name="subject" class="form-select">
+                                    <option value="">Selecteer een onderwerp</option>
+                                    <option value="afspraak">Afspraak maken</option>
+                                    <option value="vraag">Vraag over behandeling</option>
+                                    <option value="prijs">Vraag over prijzen</option>
+                                    <option value="overig">Overig</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Bericht *</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="privacy" required>
+                                    Ik ga akkoord met de <a href="privacy.html" target="_blank">privacyverklaring</a> *
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn--primary">Verstuur bericht</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section section--light">
+        <div class="container">
+            <h2 class="text-center mb-4">Onze locatie</h2>
+            <div class="map-container">
+                <!-- Placeholder for map - replace with actual map embed -->
+                <div style="width: 100%; height: 400px; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                    <p>Kaart wordt hier geladen...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center mb-4">Veelgestelde vragen</h2>
+            <div class="grid grid--2">
+                <div class="faq-item">
+                    <h3>Hoe maak ik een afspraak?</h3>
+                    <p>Je kunt een afspraak maken door ons te bellen, een WhatsApp bericht te sturen, of het contactformulier in te vullen. We nemen dan zo snel mogelijk contact met je op.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Wat zijn jullie openingstijden?</h3>
+                    <p>We zijn open van maandag tot en met vrijdag van 09:00 tot 18:00, en op zaterdag van 09:00 tot 17:00. Op zondag zijn we gesloten.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Kan ik mijn afspraak annuleren?</h3>
+                    <p>Ja, je kunt je afspraak tot 24 uur van tevoren kosteloos annuleren. Bij annulering binnen 24 uur kunnen kosten in rekening worden gebracht.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Welke betalingsmethoden accepteren jullie?</h3>
+                    <p>We accepteren contante betaling, pinbetaling, en online betalingen. Voor meer informatie over betalingsmogelijkheden kun je contact met ons opnemen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>De Beauty Schuur</h3>
+                    <p>Professionele beauty behandelingen voor de beste versie van jezelf.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Behandelingen</h3>
+                    <ul class="footer-links">
+                        <li><a href="behandelingen/example1.html">Permanente Make-up</a></li>
+                        <li><a href="behandelingen/example2.html">Huidverzorging</a></li>
+                        <li><a href="behandelingen/example1.html">Laserontharing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:+31612345678">06-12345678</a></li>
+                        <li><a href="mailto:info@debeautyschuur.nl">info@debeautyschuur.nl</a></li>
+                        <li><a href="contact.html">Contactformulier</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Volg ons</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://www.instagram.com/debeautyschuur" target="_blank" rel="noopener">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/debeautyschuur" target="_blank" rel="noopener">Facebook</a></li>
+                        <li><a href="https://wa.me/31612345678" target="_blank" rel="noopener">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 De Beauty Schuur. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div class="cookie-banner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <p>Deze website gebruikt cookies om de gebruikerservaring te verbeteren. Door verder te gaan, accepteert u ons gebruik van cookies.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button class="cookie-btn cookie-btn--accept">Accepteren</button>
+                <button class="cookie-btn cookie-btn--decline">Weigeren</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- External Contact Form Widget Script -->
+    <!-- Replace with actual external widget script -->
+    <script>
+        // Example of how to integrate external contact form widget
+        // This would be replaced with the actual widget script from your chosen provider
+        
+        // Example integration for common form services:
+        // - Formspree: https://formspree.io/
+        // - Netlify Forms: https://www.netlify.com/products/forms/
+        // - Typeform: https://www.typeform.com/
+        // - JotForm: https://www.jotform.com/
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize external contact form widget here
+            console.log('Contact form widget ready to be initialized');
+        });
+    </script>
+</body>
+</html>
