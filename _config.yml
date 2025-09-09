@@ -1,72 +1,43 @@
 # GitHub Pages Configuration for De Beauty Schuur
+# Static HTML site - minimal Jekyll configuration
+
+# Basic site information
 title: De Beauty Schuur
 description: Professionele beauty salon in Nederland - behandelingen, PMU, huidverzorging en meer
 url: "https://fsdaniel.github.io"
 baseurl: "/paschuur"
 
-# Build settings
-markdown: kramdown
-highlighter: rouge
-theme: minima
+# Disable Jekyll processing for static HTML
+plugins: []
 
-# Exclude from processing
+# Exclude files that shouldn't be processed
 exclude:
   - README.md
   - PLANNING.md
   - Gemfile
   - Gemfile.lock
   - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  - vendor/
+  - .git
+  - .gitignore
 
-# Include only these files
+# Include all HTML, CSS, JS files
 include:
-  - _redirects
+  - "*.html"
+  - "*.css"
+  - "*.js"
+  - "assets/"
+  - "behandelingen/"
 
-# Collections
-collections:
-  treatments:
-    output: true
-    permalink: /:collection/:name/
+# Disable Jekyll features we don't need
+markdown: kramdown
+highlighter: rouge
+theme: null
 
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-  - scope:
-      path: ""
-      type: "treatments"
-    values:
-      layout: "treatment"
-
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-
-# SEO
+# SEO metadata
 author: De Beauty Schuur
 social:
   name: De Beauty Schuur
   links:
     - https://www.instagram.com/debeautyschuur
     - https://www.facebook.com/debeautyschuur
-
-# Analytics (to be configured)
-google_analytics: # Add your GA tracking ID here
-
-# Contact form (external widget)
-contact_form:
-  enabled: true
-  provider: "external" # Will use external widget
-
-# Booking system
-booking_system:
-  enabled: true
-  provider: "external" # Will use external booking platform
