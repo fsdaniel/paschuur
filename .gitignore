@@ -3,6 +3,9 @@
 # Image prompt files
 image_prompt_*.txt
 
+# Incoming folder and contents
+incoming/
+
 # OS generated files
 .DS_Store
 .DS_Store?
