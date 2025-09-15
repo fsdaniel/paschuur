@@ -248,6 +248,9 @@ a:hover {
   padding: 2rem;
   box-shadow: var(--shadow);
   transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .card:hover {
@@ -271,6 +274,7 @@ a:hover {
 .card-text {
   color: var(--accent-color);
   margin-bottom: 1rem;
+  flex-grow: 1;
 }
 
 /* Forms */
@@ -349,6 +353,13 @@ a:hover {
   text-decoration: none;
 }
 
+/* Card button alignment */
+.card .btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+
 /* Footer */
 .footer {
   background-color: var(--primary-text);
@@ -389,8 +400,43 @@ a:hover {
 .footer-bottom {
   border-top: 1px solid var(--border-color);
   padding-top: 1rem;
-  text-align: center;
   color: var(--border-color);
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-legal a {
+  color: var(--border-color);
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.footer-legal a:hover {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-legal {
+    justify-content: center;
+  }
 }
 
 /* Cookie Banner */
@@ -546,6 +592,73 @@ a:hover {
 
 .visible {
   display: block;
+}
+
+/* Social Media Links */
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--primary-text);
+  transition: var(--transition);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.social-link:hover {
+  background-color: var(--light-accent);
+  transform: translateY(-2px);
+}
+
+.social-logo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.whatsapp-icon {
+  font-size: 1.2rem;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Social links in footer */
+.footer-links .social-link {
+  padding: 0.25rem 0;
+  margin-bottom: 0.5rem;
+}
+
+/* Social links in contact section */
+.social-links .social-link {
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Social links as buttons */
+.btn.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn.social-link .social-logo {
+  width: 18px;
+  height: 18px;
+}
+
+.btn.social-link .whatsapp-icon {
+  font-size: 1rem;
+  width: 18px;
+  height: 18px;
 }
 
 /* Print Styles */
