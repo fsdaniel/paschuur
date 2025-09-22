@@ -3,24 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>De Beauty Schuur - Professionele Beauty Salon</title>
-    <meta name="description" content="De Beauty Schuur biedt professionele beauty behandelingen, PMU, huidverzorging en meer. Maak vandaag nog een afspraak!">
-    <meta name="keywords" content="beauty salon, PMU, huidverzorging, permanente make-up, beauty behandelingen">
+    <title>De Beauty Schuur - Binnenkort Online</title>
+    <meta name="description" content="De Beauty Schuur komt binnenkort online! Professionele beauty behandelingen voor de beste versie van jezelf.">
     
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://fsdaniel.github.io/paschuur/">
-    <meta property="og:title" content="De Beauty Schuur - Professionele Beauty Salon">
-    <meta property="og:description" content="De Beauty Schuur biedt professionele beauty behandelingen, PMU, huidverzorging en meer.">
-    <meta property="og:image" content="https://fsdaniel.github.io/paschuur/assets/images/og-image.jpg">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://fsdaniel.github.io/paschuur/">
-    <meta property="twitter:title" content="De Beauty Schuur - Professionele Beauty Salon">
-    <meta property="twitter:description" content="De Beauty Schuur biedt professionele beauty behandelingen, PMU, huidverzorging en meer.">
-    <meta property="twitter:image" content="https://fsdaniel.github.io/paschuur/assets/images/og-image.jpg">
-
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,268 +16,248 @@
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <style>
+        .coming-soon {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--primary-bg) 0%, var(--light-accent) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .coming-soon::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23c4b5a7" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%23c4b5a7" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="%23c4b5a7" opacity="0.05"/><circle cx="10" cy="60" r="0.5" fill="%23c4b5a7" opacity="0.05"/><circle cx="90" cy="40" r="0.5" fill="%23c4b5a7" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .coming-soon-content {
+            text-align: center;
+            z-index: 2;
+            position: relative;
+            max-width: 800px;
+            padding: 2rem;
+        }
+        
+        .logo-large {
+            font-family: var(--header-font);
+            font-size: 4rem;
+            color: var(--primary-text);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-bottom: 2rem;
+            font-weight: 300;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+        
+        .coming-soon-title {
+            font-family: var(--header-font);
+            font-size: 3rem;
+            color: var(--primary-text);
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+        
+        .coming-soon-subtitle {
+            font-size: 1.25rem;
+            color: var(--accent-color);
+            margin-bottom: 3rem;
+            line-height: 1.6;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+        
+        
+        .contact-info {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 4px 15px rgba(59, 35, 0, 0.1);
+            animation: fadeInUp 1s ease-out 1s both;
+        }
+        
+        .contact-title {
+            font-family: var(--header-font);
+            font-size: 1.5rem;
+            color: var(--primary-text);
+            margin-bottom: 1rem;
+        }
+        
+        .contact-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-item {
+            text-align: center;
+        }
+        
+        .contact-item strong {
+            color: var(--primary-text);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+        
+        .contact-item a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-item a:hover {
+            color: var(--primary-text);
+            text-decoration: underline;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1rem;
+            background: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .social-link:hover {
+            background: var(--primary-text);
+            color: white;
+            text-decoration: none;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(59, 35, 0, 0.2);
+        }
+        
+        .social-logo {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+        
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .logo-large {
+                font-size: 3rem;
+            }
+            
+            .coming-soon-title {
+                font-size: 2rem;
+            }
+            
+            .coming-soon-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            
+            .contact-details {
+                grid-template-columns: 1fr;
+            }
+            
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .countdown-timer {
+                gap: 0.5rem;
+            }
+            
+            .countdown-item {
+                min-width: 60px;
+                padding: 0.75rem;
+            }
+            
+            .countdown-number {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav container">
-            <div class="logo">
-                <a href="index.html">De Beauty Schuur</a>
-            </div>
+    <div class="coming-soon">
+        <div class="coming-soon-content">
+            <div class="logo-large">De Beauty Schuur</div>
+            <div class="tagline">Professionele Beauty Behandelingen</div>
             
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="over-ons.html" class="nav-link">Over de Beauty Schuur</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="behandelingen/index.html" class="nav-link">Behandelingen</a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item">
-                            <a href="behandelingen/lash-brow.html" class="dropdown-link">Lash & Brow</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a href="behandelingen/nails.html" class="dropdown-link">Nails</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a href="behandelingen/skin.html" class="dropdown-link">Skin</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a href="behandelingen/pmu.html" class="dropdown-link">PMU</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="tarieven.html" class="nav-link">Tarieven</a>
-                </li>
-                <li class="nav-item">
-                    <a href="afspraak-maken.html" class="nav-link">Afspraak maken</a>
-                </li>
-                <li class="nav-item">
-                    <a href="merken.html" class="nav-link">Merken</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
-            </ul>
+            <h1 class="coming-soon-title">Binnenkort Online</h1>
+            <p class="coming-soon-subtitle">
+                We werken hard aan onze nieuwe website om je de beste beauty ervaring te bieden. 
+                Binnenkort kun je hier alle informatie vinden over onze behandelingen en eenvoudig een afspraak maken.
+            </p>
             
-            <button class="mobile-menu-toggle" aria-label="Menu">
-                ☰
-            </button>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1 class="hero-title">Welkom bij De Beauty Schuur</h1>
-            <p class="hero-subtitle">Professionele beauty behandelingen voor de beste versie van jezelf</p>
-            <a href="afspraak-maken.html" class="cta-button">Maak een afspraak</a>
-        </div>
-    </section>
-
-    <!-- Services Overview -->
-    <section class="section">
-        <div class="container">
-            <h2 class="text-center mb-4">Onze Behandelingen</h2>
-            <div class="grid grid--4">
-                <div class="card">
-                    <img src="assets/images/brands/HeroProduct_Image02_WEB_3000px.webp" alt="Huidverzorging met HydroPeptide" class="card-image" loading="lazy">
-                    <h3 class="card-title">Huidverzorging</h3>
-                    <p class="card-text">Laat je huid stralen! Gezicht behandelingen, huid verbeterende therapieën zorgen voor een frisse en stralende huid!</p>
-                    <a href="behandelingen/skin.html" class="btn btn--primary">Meer informatie</a>
-                </div>
-                
-                <div class="card">
-                    <img src="assets/images/brands/HeroProduct_Image05_WEB_3000px.webp" alt="Lash & Brow behandelingen" class="card-image" loading="lazy">
-                    <h3 class="card-title">Lash & Brow's</h3>
-                    <p class="card-text">Perfect gevormde wenkbrauwen en sprekende wimpers. Met professionele mapping creëren we brows die passen bij jouw gezicht — van shapen tot browlamination of hybrid brows. Ook voor het verven van wimpers en een lashlift ben je aan het juiste adres.</p>
-                    <a href="behandelingen/lash-brow.html" class="btn btn--primary">Meer informatie</a>
-                </div>
-                
-                <div class="card">
-                    <img src="assets/images/brands/HeroProduct_Image07_WEB_3000px.webp" alt="Nail behandelingen" class="card-image" loading="lazy">
-                    <h3 class="card-title">Nagelverzorging</h3>
-                    <p class="card-text">Nagels tot in de puntjes verzorgd! Verzorgende manicure tot een langdurige gellak of BIAB-versteviging. Liever iets opvallender? Kies dan voor kunstnagels— stijlvol, stevig en helemaal naar jouw smaak.</p>
-                    <a href="behandelingen/nails.html" class="btn btn--primary">Meer informatie</a>
-                </div>
-                
-                <div class="card">
-                    <img src="assets/images/brands/20231214_061_StackB_Edit_5000px.webp" alt="Permanente Make-up" class="card-image" loading="lazy">
-                    <h3 class="card-title">Permanente Make-up</h3>
-                    <p class="card-text">Ontwaak elke dag met die mooie look!</p>
-                    <a href="behandelingen/pmu.html" class="btn btn--primary">Meer informatie</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Preview -->
-    <section class="section section--light">
-        <div class="container">
-            <div class="grid grid--2">
-                <div>
-                    <h2>Over De Beauty Schuur</h2>
-                    <p>Bij De Beauty Schuur geloven we dat iedereen het recht heeft om zich mooi en zelfverzekerd te voelen. Ons team van gediplomeerde vakvrouwen staat klaar om je te helpen de beste versie van jezelf te worden.</p>
-                    <p>Met jarenlange ervaring en de nieuwste technieken bieden we een breed scala aan beauty behandelingen, van permanente make-up tot professionele huidverzorging.</p>
-                    <a href="over-ons.html" class="btn btn--secondary">Meer over ons</a>
-                </div>
-                <div>
-                    <img src="assets/images/brands/Product_Selection_Hero_Image_02_3000px.webp" alt="HydroPeptide producten bij De Beauty Schuur" class="card-image" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="section">
-        <div class="container">
-            <h2 class="text-center mb-4">Wat onze klanten zeggen</h2>
-            <div class="grid grid--3">
-                <div class="card">
-                    <p>"Fantastische behandeling! Het team is zeer professioneel en de resultaten zijn geweldig. Ik voel me weer zelfverzekerd."</p>
-                    <h4>- Sarah M.</h4>
-                </div>
-                <div class="card">
-                    <p>"De Beauty Schuur heeft mijn wenkbrauwen getransformeerd. Natuurlijk en mooi resultaat. Zeker een aanrader!"</p>
-                    <h4>- Lisa K.</h4>
-                </div>
-                <div class="card">
-                    <p>"Professionele service en een ontspannen sfeer. Ik kom hier al jaren en ben altijd tevreden over de behandelingen."</p>
-                    <h4>- Emma V.</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Information -->
-    <section class="section section--light">
-        <div class="container">
-            <div class="grid grid--2">
-                <div>
-                    <h2>Contact & Locatie</h2>
-                    <p><strong>Adres:</strong><br>
-                    Dubbele buurt 20A<br>
-                    1165MG Halfweg</p>
-                    
-                    <p><strong>Telefoon:</strong><br>
-                    <a href="tel:+31619647405">0619647405</a></p>
-                    
-                    <p><strong>E-mail:</strong><br>
-                    <a href="mailto:info@debeautyschuur.nl">info@debeautyschuur.nl</a></p>
-                    
-                    <p><strong>Openingstijden:</strong><br>
-                    Maandag: 18:00 – 21:00<br>
-                    Donderdag: 18:00 – 21:00<br>
-                    Zaterdag: 08:30 – 13:00 (oneven weken)</p>
-                </div>
-                <div>
-                    <h3>Volg ons</h3>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/debeautyschuur?igsh=MXAzMm05NWs4b3VlNw%3D%3D&utm_source=qr" target="_blank" rel="noopener" class="social-link">
-                            <img src="assets/images/instagram_logo.png" alt="Instagram" class="social-logo">
-                            Instagram
-                        </a>
-                        <a href="https://www.facebook.com/share/1JCVciBQiw/?mibextid=wwXIfr" target="_blank" rel="noopener" class="social-link">
-                            <img src="assets/images/facebook_logo.png" alt="Facebook" class="social-logo">
-                            Facebook
-                        </a>
-                        <a href="https://wa.me/31619647405" target="_blank" rel="noopener" class="social-link">
-                            <img src="assets/images/whatsapp_logo.png" alt="WhatsApp" class="social-logo">
-                            WhatsApp
-                        </a>
+            
+            <div class="contact-info">
+                <h3 class="contact-title">Neem nu alvast contact op</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <strong>Telefoon</strong>
+                        <a href="tel:+31619647405">0619647405</a>
                     </div>
-                    
-                    <div class="mt-3">
-                        <a href="contact.html" class="btn btn--primary">Neem contact op</a>
+                    <div class="contact-item">
+                        <strong>E-mail</strong>
+                        <a href="mailto:info@debeautyschuur.nl">info@debeautyschuur.nl</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Adres</strong>
+                        Dubbele buurt 20A<br>
+                        1165MG Halfweg
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>De Beauty Schuur</h3>
-                    <p>Professionele beauty behandelingen voor de beste versie van jezelf.</p>
-                </div>
                 
-                <div class="footer-section">
-                    <h3>Behandelingen</h3>
-                    <ul class="footer-links">
-                        <li><a href="behandelingen/skin.html">Skin</a></li>
-                        <li><a href="behandelingen/lash-brow.html">Lash & Brow</a></li>
-                        <li><a href="behandelingen/nails.html">Nails</a></li>
-                        <li><a href="behandelingen/pmu.html">PMU</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <ul class="footer-links">
-                        <li><a href="tel:+31619647405">0619647405</a></li>
-                        <li><a href="mailto:info@debeautyschuur.nl">info@debeautyschuur.nl</a></li>
-                        <li><a href="contact.html">Contactformulier</a></li>
-                        <li>KVK-nummer: 97724076</li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Volg ons</h3>
-                    <ul class="footer-links">
-                        <li><a href="https://www.instagram.com/debeautyschuur?igsh=MXAzMm05NWs4b3VlNw%3D%3D&utm_source=qr" target="_blank" rel="noopener" class="social-link">
-                            <img src="assets/images/instagram_logo.png" alt="Instagram" class="social-logo">
-                            Instagram
-                        </a></li>
-                        <li><a href="https://www.facebook.com/share/1JCVciBQiw/?mibextid=wwXIfr" target="_blank" rel="noopener" class="social-link">
-                            <img src="assets/images/facebook_logo.png" alt="Facebook" class="social-logo">
-                            Facebook
-                        </a></li>
-                        <li><a href="https://wa.me/31619647405" target="_blank" rel="noopener" class="social-link">
-                            <img src="assets/images/whatsapp_logo.png" alt="WhatsApp" class="social-logo">
-                            WhatsApp
-                        </a></li>
-                    </ul>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/debeautyschuur?igsh=MXAzMm05NWs4b3VlNw%3D%3D&utm_source=qr" target="_blank" rel="noopener" class="social-link">
+                        <img src="assets/images/instagram_logo.png" alt="Instagram" class="social-logo">
+                        Instagram
+                    </a>
+                    <a href="https://www.facebook.com/share/1JCVciBQiw/?mibextid=wwXIfr" target="_blank" rel="noopener" class="social-link">
+                        <img src="assets/images/facebook_logo.png" alt="Facebook" class="social-logo">
+                        Facebook
+                    </a>
+                    <a href="https://wa.me/31619647405" target="_blank" rel="noopener" class="social-link">
+                        <img src="assets/images/whatsapp_logo.png" alt="WhatsApp" class="social-logo">
+                        WhatsApp
+                    </a>
                 </div>
             </div>
             
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2025 De Beauty Schuur. Alle rechten voorbehouden.</p>
-                    <div class="footer-legal">
-                        <a href="algemene-voorwaarden.html">Algemene Voorwaarden</a>
-                        <a href="algemene-voorwaarden.html#privacy-beleid">Privacy Beleid</a>
-                        <a href="algemene-voorwaarden.html#gdpr">GDPR</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Cookie Banner -->
-    <div class="cookie-banner">
-        <div class="cookie-content">
-            <div class="cookie-text">
-                <p>Deze website gebruikt cookies om de gebruikerservaring te verbeteren. Door verder te gaan, accepteert u ons gebruik van cookies.</p>
-            </div>
-            <div class="cookie-buttons">
-                <button class="cookie-btn cookie-btn--accept">Accepteren</button>
-                <button class="cookie-btn cookie-btn--decline">Weigeren</button>
-            </div>
         </div>
     </div>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-to-top hidden" aria-label="Terug naar boven">
-        ↑
-    </button>
-
-    <!-- Scripts -->
-    <script src="assets/js/main.js"></script>
 </body>
 </html>
