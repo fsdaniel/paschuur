@@ -230,7 +230,7 @@ a:hover {
 }
 
 .grid--2 {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .grid--3 {
@@ -561,6 +561,65 @@ a:hover {
   .grid--4 {
     grid-template-columns: 1fr;
   }
+}
+
+/* List Styling */
+.card ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.card li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Compact Pricing Table Styling */
+.pricing-table-compact {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.pricing-table-compact tr {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.pricing-table-compact tr:last-child {
+  border-bottom: none;
+}
+
+.pricing-table-compact td {
+  padding: 0.5rem 0;
+  vertical-align: top;
+}
+
+.pricing-table-compact td:first-child {
+  padding-right: 1rem;
+  width: 70%;
+}
+
+.pricing-table-compact .price {
+  font-weight: 600;
+  color: var(--accent-color);
+  text-align: right;
+  white-space: nowrap;
+  width: 30%;
+}
+
+.pricing-table-compact tr.indented td:first-child {
+  padding-left: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--accent-color);
+  font-style: italic;
+  position: relative;
+}
+
+.pricing-table-compact tr.indented td:first-child::before {
+  content: "•";
+  position: absolute;
+  left: 0.5rem;
+  color: var(--accent-color);
 }
 
 /* Utility Classes */
