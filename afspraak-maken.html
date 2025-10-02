@@ -95,21 +95,9 @@
                     <p>Plan eenvoudig online en verzeker jezelf van persoonlijke aandacht, professionele zorg en een stralend resultaat.</p>
                     <p>Weet je niet precies welke behandeling het beste bij je past? Neem gerust contact op — ik denk graag met je mee!</p>
                     
-                    <!-- External Booking Widget -->
-                    <div id="booking-widget" class="booking-widget">
-                        <!-- This will be replaced by the external booking system widget -->
-                        <div class="booking-placeholder">
-                            <div class="booking-iframe-container">
-                                <!-- Placeholder for booking system iframe -->
-                                <div style="width: 100%; height: 600px; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center; border-radius: 8px; border: 2px dashed #ccc;">
-                                    <div style="text-align: center;">
-                                        <p><strong>Boekingssysteem</strong></p>
-                                        <p>Wordt hier geladen...</p>
-                                        <p><small>Integreer hier je externe booking platform</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- Salonized Booking Widget -->
+                    <div class="booking-widget">
+                        <div class="salonized-booking" data-company="LirfvBYJ8fgSQBKJp3CJ8Zjf" data-color="#FF6575" data-language="nl" data-height="700" data-inline="true" data-outline="shadow" data-widget_id="ha9dBvhXYYkKkeEkv5FMzcVC"></div>
                     </div>
                 </div>
                 
@@ -118,7 +106,7 @@
                     
                     <div class="booking-methods">
                         <div class="card">
-                            <h3>📞 Telefonisch</h3>
+                            <h3>📱 Telefonisch</h3>
                             <p>Bel ons direct voor een afspraak</p>
                             <a href="tel:+31619647405" class="btn btn--primary">0619647405</a>
                         </div>
@@ -127,12 +115,6 @@
                             <h3><img src="assets/images/whatsapp_logo.png" alt="WhatsApp" class="social-logo" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 8px;"> WhatsApp</h3>
                             <p>Stuur een bericht via WhatsApp</p>
                             <a href="https://wa.me/31619647405" class="btn btn--primary" target="_blank" rel="noopener">WhatsApp</a>
-                        </div>
-                        
-                        <div class="card">
-                            <h3>📧 E-mail</h3>
-                            <p>Stuur een e-mail met je voorkeuren</p>
-                            <a href="mailto:info@debeautyschuur.nl" class="btn btn--primary">E-mail sturen</a>
                         </div>
                     </div>
                     
@@ -164,7 +146,7 @@
                         <li>Hydrafacial</li>
                         <li>Huidanalyse</li>
                     </ul>
-                    <p><strong>Duur:</strong> 1-2 uur</p>
+
                     <a href="behandelingen/skin.html" class="btn btn--secondary">Meer informatie</a>
                 </div>
                 
@@ -177,7 +159,7 @@
                         <li>Lash lift</li>
                         <li>Henna brows</li>
                     </ul>
-                    <p><strong>Duur:</strong> 1-2 uur</p>
+
                     <a href="behandelingen/lash-brow.html" class="btn btn--secondary">Meer informatie</a>
                 </div>
                 
@@ -190,7 +172,7 @@
                         <li>Nail extensions</li>
                         <li>Pedicure</li>
                     </ul>
-                    <p><strong>Duur:</strong> 1-2 uur</p>
+
                     <a href="behandelingen/nails.html" class="btn btn--secondary">Meer informatie</a>
                 </div>
                 
@@ -203,7 +185,7 @@
                         <li>Deepliner</li>
                         <li>Lipblush</li>
                     </ul>
-                    <p><strong>Duur:</strong> 2-3 uur</p>
+
                     <a href="behandelingen/pmu.html" class="btn btn--secondary">Meer informatie</a>
                 </div>
             </div>
@@ -301,7 +283,7 @@
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Volg ons</h3>
+                    <h3>Volg De Beauty Schuur</h3>
                     <ul class="footer-links">
                         <li><a href="https://www.instagram.com/debeautyschuur?igsh=MXAzMm05NWs4b3VlNw%3D%3D&utm_source=qr" target="_blank" rel="noopener" class="social-link">
                             <img src="assets/images/instagram_logo.png" alt="Instagram" class="social-logo">
@@ -348,30 +330,7 @@
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>
     
-    <!-- External Booking System Script -->
-    <!-- Replace with actual external booking system script -->
-    <script>
-        // Example of how to integrate external booking system
-        // This would be replaced with the actual booking system script from your chosen provider
-        
-        // Example integrations for common booking systems:
-        // - Acuity Scheduling: https://acuityscheduling.com/
-        // - Calendly: https://calendly.com/
-        // - SimplyBook.me: https://simplybook.me/
-        // - BookingBug: https://www.bookingbug.com/
-        // - Fresha: https://www.fresha.com/
-        
-        document.addEventListener('DOMContentLoaded', function() {
-            // Initialize external booking system widget here
-            console.log('Booking system widget ready to be initialized');
-            
-            // Example: Load booking widget
-            // window.BookingWidget.init({
-            //     container: '#booking-widget',
-            //     apiKey: 'your-booking-api-key',
-            //     businessId: 'your-business-id'
-            // });
-        });
-    </script>
+    <!-- Salonized Booking System Script -->
+    <script src="https://static-widget.salonized.com/loader.js"></script>
 </body>
 </html>
