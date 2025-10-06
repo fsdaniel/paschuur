@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Beauty Schuur - Binnenkort Online</title>
+    <meta name="description" content="De Beauty Schuur komt binnenkort online! Professionele beauty behandelingen voor de beste versie van jezelf.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <style>
+        .coming-soon {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--primary-bg) 0%, var(--light-accent) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .coming-soon::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23c4b5a7" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%23c4b5a7" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="%23c4b5a7" opacity="0.05"/><circle cx="10" cy="60" r="0.5" fill="%23c4b5a7" opacity="0.05"/><circle cx="90" cy="40" r="0.5" fill="%23c4b5a7" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .coming-soon-content {
+            text-align: center;
+            z-index: 2;
+            position: relative;
+            max-width: 800px;
+            padding: 2rem;
+        }
+        
+        .logo-large {
+            font-family: var(--header-font);
+            font-size: 4rem;
+            color: var(--primary-text);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-bottom: 2rem;
+            font-weight: 300;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+        
+        .coming-soon-title {
+            font-family: var(--header-font);
+            font-size: 3rem;
+            color: var(--primary-text);
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+        
+        .coming-soon-subtitle {
+            font-size: 1.25rem;
+            color: var(--accent-color);
+            margin-bottom: 3rem;
+            line-height: 1.6;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+        
+        
+        .contact-info {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 4px 15px rgba(59, 35, 0, 0.1);
+            animation: fadeInUp 1s ease-out 1s both;
+        }
+        
+        .contact-title {
+            font-family: var(--header-font);
+            font-size: 1.5rem;
+            color: var(--primary-text);
+            margin-bottom: 1rem;
+        }
+        
+        .contact-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-item {
+            text-align: center;
+        }
+        
+        .contact-item strong {
+            color: var(--primary-text);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+        
+        .contact-item a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-item a:hover {
+            color: var(--primary-text);
+            text-decoration: underline;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1rem;
+            background: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .social-link:hover {
+            background: var(--primary-text);
+            color: white;
+            text-decoration: none;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(59, 35, 0, 0.2);
+        }
+        
+        .social-logo {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+        
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .logo-large {
+                font-size: 3rem;
+            }
+            
+            .coming-soon-title {
+                font-size: 2rem;
+            }
+            
+            .coming-soon-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            
+            .contact-details {
+                grid-template-columns: 1fr;
+            }
+            
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .countdown-timer {
+                gap: 0.5rem;
+            }
+            
+            .countdown-item {
+                min-width: 60px;
+                padding: 0.75rem;
+            }
+            
+            .countdown-number {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="coming-soon">
+        <div class="coming-soon-content">
+            <div class="logo-large">De Beauty Schuur</div>
+            <div class="tagline">Professionele Beauty Behandelingen</div>
+            
+            <h1 class="coming-soon-title">Binnenkort Online</h1>
+            <p class="coming-soon-subtitle">
+                We werken hard aan onze nieuwe website om je de beste beauty ervaring te bieden. 
+                Binnenkort kun je hier alle informatie vinden over onze behandelingen en eenvoudig een afspraak maken.
+            </p>
+            
+            
+            <div class="contact-info">
+                <h3 class="contact-title">Neem nu alvast contact op</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <strong>Telefoon</strong>
+                        <a href="tel:+31619647405">0619647405</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>E-mail</strong>
+                        <a href="mailto:info@debeautyschuur.nl">info@debeautyschuur.nl</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Adres</strong>
+                        Dubbele buurt 20A<br>
+                        1165MG Halfweg
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://www.instagram.com/debeautyschuur?igsh=MXAzMm05NWs4b3VlNw%3D%3D&utm_source=qr" target="_blank" rel="noopener" class="social-link">
+                        <img src="assets/images/instagram_logo.png" alt="Instagram" class="social-logo">
+                        Instagram
+                    </a>
+                    <a href="https://www.facebook.com/share/1JCVciBQiw/?mibextid=wwXIfr" target="_blank" rel="noopener" class="social-link">
+                        <img src="assets/images/facebook_logo.png" alt="Facebook" class="social-logo">
+                        Facebook
+                    </a>
+                    <a href="https://wa.me/31619647405" target="_blank" rel="noopener" class="social-link">
+                        <img src="assets/images/whatsapp_logo.png" alt="WhatsApp" class="social-logo">
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
