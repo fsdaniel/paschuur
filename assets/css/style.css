@@ -362,6 +362,49 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+.equipment-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+}
+
+.equipment-section .equipment-inline-image {
+  width: 35%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.equipment-ems-image {
+  width: 17.5%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.equipment-derma-image {
+  width: 26.25%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.equipment-section:nth-of-type(1) {
+  flex-direction: row;
+}
+
+.equipment-section:nth-of-type(2) {
+  flex-direction: row-reverse;
+}
+
+.equipment-section p {
+  margin: 0;
+}
+
 .card-title {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
