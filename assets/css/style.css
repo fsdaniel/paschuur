@@ -393,6 +393,15 @@ a:hover {
   flex-shrink: 0;
 }
 
+.laliqa-image {
+  width: auto;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 4px;
+  margin: 0 auto 1rem auto;
+  display: block;
+}
+
 .equipment-section:nth-of-type(1) {
   flex-direction: row;
 }
