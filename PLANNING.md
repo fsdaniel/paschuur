@@ -27,7 +27,7 @@
 
 ### Main Navigation
 1. **Home** (`index.html`)
-2. **Over de Beauty Schuur** (`over-ons.html`)
+2. **Over de Beauty Schuur** (`over-mij.html`)
 3. **Behandelingen** (dropdown)
    - Example 1 (`behandelingen/example1.html`)
    - Example 2 (`behandelingen/example2.html`)
@@ -40,7 +40,7 @@
 ```
 /
 ├── index.html
-├── over-ons.html
+├── over-mij.html
 ├── tarieven.html
 ├── afspraak-maken.html
 ├── merken.html
@@ -91,7 +91,7 @@
 - **Contact Information:** Address, phone, hours
 - **Social Media Links**
 
-### Over de Beauty Schuur (`over-ons.html`)
+### Over de Beauty Schuur (`over-mij.html`)
 - **Salon History:** Story and mission
 - **Team Section:** Staff profiles and photos
 - **Facility Photos:** Interior and treatment rooms
